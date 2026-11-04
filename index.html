@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Decoração Infantil e Brinquedos Educativos - Coelho na Lua</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Barra de anúncio no topo */
+        .top-bar {
+            background-color: #e0f7fa;
+            color: #006064;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ffffff;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        /* Seção Hero */
+        .hero {
+            background-color: #fff3e0;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            color: #d84315;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #5d4037;
+        }
+
+        /* Selos de Segurança */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .badge svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Categorias */
+        .categories {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card h3 {
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        /* Seção Bebês */
+        .babies-section {
+            background-color: #fce4ec;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .babies-section h2 {
+            color: #c2185b;
+            margin-bottom: 20px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+        
+        footer .cnpj {
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Desconto -->
+    <div class="top-bar">
+        USE O CUPOM <strong>OLACOELHO</strong> NA SUA PRIMEIRA COMPRA COM A GENTE E GANHE 5% DE DESCONTO :))
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <a href="#" class="logo">Coelho na Lua 🐰🌙</a>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="hero">
+        <h1>Decoração Infantil e Brinquedos Educativos</h1>
+        <p>Presenteie com originalidade e delicadeza.</p>
+        
+        <!-- Selos de Confiança -->
+        <div class="trust-badges">
+            <!-- Selo Google -->
+            <div class="badge">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                Verificado pelo Google
+            </div>
+            
+            <!-- Selo Loja Protegida -->
+            <div class="badge">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10.5 16L7.5 13L8.91 11.59L10.5 13.17L15.09 8.59L16.5 10L10.5 16Z" fill="#34A853"/>
+                </svg>
+                Loja Protegida
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categories">
+        <h2>Confira nossas Categorias</h2>
+        <div class="grid">
+            <div class="category-card">
+                <h3>Brinquedos Educativos</h3>
+                <p>Desenvolvimento e diversão para os pequenos.</p>
+            </div>
+            <div class="category-card">
+                <h3>Decoração Infantil</h3>
+                <p>Ambientes lúdicos e acolhedores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Bebês -->
+    <section class="babies-section">
+        <h2>Presente para bebês?</h2>
+        <p>Separamos aqui algumas opções para você presentar com originalidade e delicadeza!</p>
+    </section>
+
+    <!-- Rodapé com CNPJ -->
+    <footer>
+        <p>&copy; 2026 Coelho na Lua. Todos os direitos reservados.</p>
+        <p class="cnpj">CNPJ: 17.872.156/0001-65</p>
+    </footer>
+
+</body>
+</html>
